@@ -1,0 +1,52 @@
+{
+  "name": "express-api-starter-template",
+  "version": "1.0.0",
+  "description": "Basic scaffolding for APIS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "swagger-autogen": "node swagger.js",
+    "lint": "eslint .  --ext .js",
+    "lint-fix": "eslint --fix .  --ext .js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Kunalrawat425/express-api-starter-template.git"
+  },
+  "author": "kunal rawat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Kunalrawat425/express-api-starter-template/issues"
+  },
+  "homepage": "https://gitlab.com/Kunalrawat425/express-api-starter-template#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^5.3.0",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.0",
+    "passport-jwt": "^4.0.0",
+    "sequelize": "^6.12.0-alpha.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb": "^19.0.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "sequelize-cli": "^6.3.0",
+    "swagger-autogen": "^2.13.0",
+    "swagger-ui-express": "^4.1.4"
+  }
+}
