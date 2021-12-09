@@ -5,14 +5,7 @@ var router = express.Router();
 const userId = require("../middlewares/userId");
 
 const userRouter = require("../routes/userRoute");
-const campaignOrdersRouter = require("./campaignOrdersRoute");
-const campaignRouter = require("../routes/campaignRoute");
-// const paymentProviderRouter = require('../routes/paymentProviderRoute');
-const paymentRouter = require("../routes/paymentRoute");
-const serviceTypesRouter = require("../routes/serviceTypeRoute");
-const serviceRouter = require("../routes/serviceRoute");
-const platformRouter = require("../routes/platformRoute");
-const vendorRouter = require("../routes/vendorRoute");
+
 
 const passport = require("passport");
 const passportJWT = require("passport-jwt");
@@ -44,13 +37,5 @@ router.use(passport.authenticate("jwt", { session: false }));
 router.use(userId);
 
 router.use("/user", userRouter);
-router.use("/campaignorder", campaignOrdersRouter);
-router.use("/campaign", campaignRouter);
-// router.use("/paymentprovider",paymentProviderRouter);
-router.use("/payment", paymentRouter);
-router.use("/servicetype", serviceTypesRouter);
-router.use("/service", serviceRouter);
-router.use("/platform", platformRouter);
-router.use("/vendor", vendorRouter);
 
 module.exports = router;
