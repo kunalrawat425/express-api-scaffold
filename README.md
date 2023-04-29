@@ -1,4 +1,4 @@
-# express-api-starter-template
+# Express rest api boilerplate
 
 
 
